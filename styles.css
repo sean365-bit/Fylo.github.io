@@ -163,6 +163,37 @@ body {
   background: var(--secondBackground);
 }
 
+.card img {
+  background: var(--secondBackground);
+}
+
+/* Productive Container  */
+
+.productiveContainer {
+  display: flex;
+  justify-content: center;
+
+  border: 1px solid yellow;
+  color: white;
+}
+
+.productiveContainer div h1 {
+  margin-bottom: 25px;
+  text-align: justify;
+  font-size: 2.2rem;
+}
+
+.productiveContainer div p {
+  line-height: 1.9;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.FyloWorks {
+  text-decoration: underline;
+  color: hsl(198, 60%, 50%);
+}
+
 /* customm  */
 .attribution {
   font-size: 11px;
@@ -173,3 +204,9 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+/* Media Quaries */
+@media only screen and (max-width: 480px) {
+  body {
+    width: 375px;
+  }
+}
