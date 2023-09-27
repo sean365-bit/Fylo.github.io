@@ -204,6 +204,30 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+/* Comments Container */
+
+.commentsContainer {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  border: 1px solid red;
+  color: white;
+  line-height: 1.5;
+  text-align: justify;
+}
+.commentsContainer .comment {
+  margin-bottom: 50px;
+}
+
+.person {
+  border: 1px solid white;
+  margin: 15px;
+}
+
+.person img {
+  border-radius: 50%;
+}
+
 /* Media Quaries */
 @media only screen and (max-width: 480px) {
   body {
