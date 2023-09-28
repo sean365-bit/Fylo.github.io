@@ -32,7 +32,6 @@ body {
   height: 70px;
   width: auto;
   padding: 100px 10%;
-  border: 1px solid hsl(0, 0%, 100%);
 }
 
 .header .logo {
@@ -77,7 +76,6 @@ body {
 
 /* Ilustration info  */
 .ilustration .firstIlustration {
-  border: 1px solid yellow;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,16 +135,12 @@ body {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-
   align-items: center;
-
   background: var(--secondBackground);
   color: white;
-  border: 1px solid yellowgreen;
 }
 
 .card {
-  border: 1px solid red;
   background: var(--secondBackground);
   width: 550px;
   height: 250px;
@@ -172,8 +166,6 @@ body {
 .productiveContainer {
   display: flex;
   justify-content: center;
-
-  border: 1px solid yellow;
   color: white;
 }
 
@@ -210,22 +202,32 @@ body {
   display: flex;
   padding: 15px;
   justify-content: center;
-  border: 1px solid red;
   color: white;
   line-height: 1.5;
   text-align: justify;
 }
 .commentsContainer .comment {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .person {
-  border: 1px solid white;
   margin: 15px;
 }
 
 .person img {
   border-radius: 50%;
+  height: 40px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+/* Early Access */
+.earlyAccess {
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
 /* Media Quaries */
