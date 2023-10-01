@@ -1,0 +1,69 @@
+.info {
+  text-align: left;
+  padding: 2rem 2rem;
+  font-family: map-get($fonts, open-sans);
+
+  #{&}-content {
+    margin-top: 3rem;
+    & h2 {
+      font-size: 1.4rem;
+    }
+    & .info-paragraph {
+      font-weight: 300;
+      opacity: 0.9;
+      line-height: 1.5rem;
+    }
+    & .see-more {
+      color: $Cyan;
+      padding-bottom: 0.2rem;
+      text-decoration: none;
+      border-bottom: solid $Cyan 1px;
+      @include flex;
+      justify-self: center;
+      gap: 0.4rem;
+      width: fit-content;
+      cursor: pointer;
+      & .fa-arrow-right {
+        background-color: $Cyan;
+        border-radius: 100%;
+        padding: 0.2rem;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.63);
+      }
+      &:hover {
+        color: $WHITE;
+        border-bottom: solid 1px $WHITE;
+        & .fa-arrow-right {
+          color: rgba(0, 0, 0, 0.63);
+          background-color: $WHITE;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  .info {
+    margin: 0 auto;
+    // padding: 5rem;
+    width: 60%;
+  }
+}
+@media (min-width: 900px) {
+  .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 2rem 2rem;
+    width: 80%;
+    margin-top: 3.3rem;
+    gap: 3rem;
+    #{&}-content {
+      & h2 {
+        font-size: 1.7rem;
+      }
+      & .see-more {
+        margin-top: 1.3rem;
+      }
+    }
+  }
+}

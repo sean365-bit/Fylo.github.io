@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;700&display=swap");
+
+@import "config";
+@import "intro";
+@import "services";
+@import "info";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $Dark-Blue2;
+  color: $WHITE;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background: $Dark-Blue4;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 40% auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  & .logoImage {
+    & .logo {
+      width: 65%;
+    }
+  }
+  .nav {
+    & .nav-links {
+      @include flex;
+      padding: 0;
+      gap: 1rem;
+      & .nav-list {
+        list-style-type: none;
+        & .nav-link {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.719);
+          font-family: map-get($fonts, releway);
+          letter-spacing: 0.2px;
+          text-transform: capitalize;
+          font-weight: 400;
+          font-size: 14px;
+          cursor: pointer;
+          &:hover {
+            color: $WHITE;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  background: $Dark-Blue2;
+}
+
+@media (min-width: 510px) {
+  .header {
+    padding: 2rem 7rem;
+    & .logoImage {
+      & .logo {
+        width: 40%;
+        margin-top: 0.6rem;
+      }
+    }
+    a {
+      font-size: 1.2rem;
+    }
+  }
+}

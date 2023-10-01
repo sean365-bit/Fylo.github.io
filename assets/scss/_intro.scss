@@ -1,0 +1,58 @@
+.intro {
+  text-align: center;
+  font-family: map-get($fonts, open-sans);
+  padding-bottom: 4rem;
+  & .illustration {
+    // z-index: 4;
+    & .intro-illustration {
+      width: 86%;
+    }
+  }
+  #{&}-content {
+    padding: 1.5rem 2rem;
+    // z-index: 4;
+    & .intro-paragraph {
+      opacity: 0.9;
+      font-weight: 300;
+      line-height: 1.5rem;
+      z-index: 10;
+    }
+    & .button {
+      z-index: 10;
+      color: $WHITE;
+      border: none;
+      background: linear-gradient(to bottom right, $Cyan, $Blue);
+      width: 80%;
+      padding: 1rem;
+      border-radius: 2.5rem;
+      font-size: 1rem;
+      letter-spacing: 0.9px;
+      font-weight: 300;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media (min-width: 610px) {
+  .intro {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    #{&}-content {
+      padding: 2rem;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro {
+    width: 57%;
+  }
+}
