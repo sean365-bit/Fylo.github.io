@@ -1,0 +1,99 @@
+main {
+  position: relative;
+  padding-bottom: 15rem;
+}
+.quick-contact {
+  position: absolute;
+  z-index: 5;
+  height: fit-content;
+  bottom: -10rem;
+  left: 0;
+  background-color: $Dark-Blue3;
+
+  font-family: map-get($fonts, open-sans);
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: 2rem;
+  z-index: 3;
+  background: $Dark-Blue3;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgb(12, 10, 31);
+
+  & h2 {
+    font-size: 1.3rem;
+  }
+  & p {
+    padding: 0 0.6rem;
+    font-weight: 300;
+    opacity: 0.9;
+  }
+  & .form {
+    @include flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    & input {
+      background: $WHITE;
+      outline: none;
+      border: none;
+      padding: 1rem 1.5rem;
+      border-radius: 2.5rem;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      font-weight: 300;
+      width: 70%;
+    }
+
+    & .getStarted {
+      font-weight: 700;
+      border-radius: 2.5rem;
+      border: none;
+      width: 80%;
+      color: $WHITE;
+      background: $Blue;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media (min-width: 629px) {
+  .quick-contact {
+    width: 60%;
+    left: 11%;
+  }
+}
+
+@media (min-width: 784px) {
+  .quick-contact {
+    bottom: -12rem;
+    width: 74%;
+    left: 7%;
+    & .form {
+      flex-direction: row;
+      align-items: center;
+      padding: 0 1rem;
+      & input {
+        margin: 0;
+        width: 56%;
+      }
+      & .getStarted {
+        margin: 0;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 1196px) {
+  .quick-contact {
+    width: 50%;
+    left: 18%;
+    bottom: -10rem;
+  }
+}

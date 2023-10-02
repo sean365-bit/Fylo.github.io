@@ -159,6 +159,310 @@
     margin-top: 1.3rem;
   }
 }
+.testimonials-container {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  padding: 14rem 2.5rem;
+}
+.testimonials-container .quotes-icon {
+  width: 10%;
+  margin-bottom: -0.3rem;
+  margin-left: 0.3rem;
+}
+.testimonials-container .testimonials {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+.testimonials-container .testimonials .testimonial {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.452);
+  /*      height: 300px;  */
+  border-radius: 0.4rem;
+  background-color: hsl(219, 30%, 18%);
+  padding: 1rem 1.5rem;
+}
+.testimonials-container .testimonials .testimonial .person-infos {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  gap: 0.7rem;
+}
+.testimonials-container .testimonials .testimonial .person-infos .customer-img {
+  border-radius: 100%;
+  width: 10%;
+}
+.testimonials-container .testimonials .testimonial .person-infos .person-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.testimonials-container .testimonials .testimonial .person-infos .person-info cite {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+}
+.testimonials-container .testimonials .testimonial .person-infos .person-info strong {
+  font-size: 15px;
+}
+.testimonials-container .testimonials .testimonial-paragraph {
+  background-color: hsl(219, 30%, 18%);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+
+@media (min-width: 530px) {
+  .testimonials-container {
+    padding: 5rem 3.5rem;
+  }
+  .testimonials-container .testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .testimonials-container {
+    position: relative;
+    margin-top: 4rem;
+    padding: 5rem 8rem;
+  }
+  .testimonials-container .quotes-icon {
+    width: 5%;
+  }
+  .testimonials-container .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+main {
+  position: relative;
+  padding-bottom: 15rem;
+}
+
+.quick-contact {
+  position: absolute;
+  z-index: 5;
+  height: fit-content;
+  bottom: -10rem;
+  left: 0;
+  background-color: hsl(217, 28%, 15%);
+  font-family: "Open Sans", sans-serif;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: 2rem;
+  z-index: 3;
+  background: hsl(217, 28%, 15%);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgb(12, 10, 31);
+}
+.quick-contact h2 {
+  font-size: 1.3rem;
+}
+.quick-contact p {
+  padding: 0 0.6rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+.quick-contact .form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.quick-contact .form input {
+  background: hsl(0, 0%, 100%);
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 2.5rem;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  font-weight: 300;
+  width: 70%;
+}
+.quick-contact .form .getStarted {
+  font-weight: 700;
+  border-radius: 2.5rem;
+  border: none;
+  width: 80%;
+  color: hsl(0, 0%, 100%);
+  background: hsl(198, 60%, 50%);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+.quick-contact .form .getStarted:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 629px) {
+  .quick-contact {
+    width: 60%;
+    left: 11%;
+  }
+}
+@media (min-width: 784px) {
+  .quick-contact {
+    bottom: -12rem;
+    width: 74%;
+    left: 7%;
+  }
+  .quick-contact .form {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .quick-contact .form input {
+    margin: 0;
+    width: 56%;
+  }
+  .quick-contact .form .getStarted {
+    margin: 0;
+    width: auto;
+  }
+}
+@media (min-width: 1196px) {
+  .quick-contact {
+    width: 50%;
+    left: 18%;
+    bottom: -10rem;
+  }
+}
+.footer {
+  z-index: 2;
+  background: hsl(216, 53%, 9%);
+  font-family: "Open Sans", sans-serif;
+  padding: 30rem 2.3rem 2rem 2.3rem;
+  margin-top: -15rem;
+}
+.footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.footer .logo-section .logo {
+  width: 30%;
+}
+.footer .contact-info {
+  margin-top: 1.7rem;
+}
+.footer .part {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.footer .part .address-icons {
+  width: 6%;
+}
+.footer .part p {
+  font-weight: 300;
+}
+.footer .last-section {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 1.4rem;
+}
+.footer .last-section ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: flex-start;
+}
+.footer .last-section ul li {
+  list-style-type: none;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.footer .last-section ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  opacity: 0.8;
+}
+.footer .last-section ul li a:hover {
+  opacity: 1;
+  font-weight: 700;
+}
+.footer .last-section .social-media-icons {
+  align-self: center;
+}
+.footer .last-section .social-media-icons ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .last-section .social-media-icons ul li i {
+  border: solid 1px hsl(0, 0%, 100%);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.footer .last-section .social-media-icons ul li i:hover {
+  border: solid 1px hsl(176, 68%, 64%);
+  color: hsl(176, 68%, 64%);
+}
+
+@media (min-width: 550px) {
+  .footer .cont .contact-info .address-icons {
+    width: 4%;
+  }
+  .footer .last-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+}
+@media (min-width: 769px) {
+  .footer {
+    padding: 30rem 3rem 2rem 3rem;
+  }
+  .footer .logo-section .logo {
+    width: 10%;
+  }
+  .footer .cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .cont .contact-info {
+    width: 44%;
+  }
+  .footer .cont .contact-info .address-icons {
+    width: 6%;
+    opacity: 0.8;
+  }
+  .footer .cont .last-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 850px) {
+  .footer .cont {
+    align-items: flex-start;
+  }
+  .footer .cont .contact-info .address-icons {
+    width: 4%;
+  }
+  .footer .cont .last-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer .cont .last-section .social-media-icons {
+    width: 100%;
+    align-self: flex-start;
+  }
+}
 body {
   margin: 0;
   padding: 0;

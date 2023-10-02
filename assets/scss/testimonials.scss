@@ -1,0 +1,76 @@
+.testimonials-container {
+  text-align: left;
+  font-family: map-get($fonts, open-sans);
+  padding: 14rem 2.5rem;
+  & .quotes-icon {
+    width: 10%;
+    margin-bottom: -0.3rem;
+    margin-left: 0.3rem;
+  }
+  & .testimonials {
+    @include flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    & .testimonial {
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.452);
+      /*      height: 300px;  */
+
+      border-radius: 0.4rem;
+      background-color: $Dark-Blue4;
+      padding: 1rem 1.5rem;
+      & .person-infos {
+        @include flex;
+        margin-top: 0.5rem;
+        gap: 0.7rem;
+
+        & .customer-img {
+          border-radius: 100%;
+          width: 10%;
+        }
+        & .person-info {
+          @include flex;
+          flex-direction: column;
+          align-items: flex-start;
+          & cite {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+          }
+          & strong {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    & .testimonial-paragraph {
+      background-color: $Dark-Blue4;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.4rem;
+    }
+  }
+}
+
+@media (min-width: 530px) {
+  .testimonials-container {
+    padding: 5rem 3.5rem;
+    & .testimonials {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .testimonials-container {
+    position: relative;
+    margin-top: 4rem;
+    padding: 5rem 8rem;
+    & .quotes-icon {
+      width: 5%;
+    }
+    & .testimonials {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

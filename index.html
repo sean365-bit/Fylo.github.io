@@ -147,47 +147,148 @@
           </div>
         </div>
 
-        <section class="commentsContainer">
-          <div class="person">
-            <p class="comment">
-              Fylo has improved our team productivity by <br />
-              an order of magnitude. Since making the <br />
-              switch our team has become a well-oiled <br />collaboration
-              machine.
-            </p>
-            <img src="./images/profile-1.jpg" alt="Satish Patel profile" />
-            <p class="bold">Satish Patel</p>
-            <p>Founder & CEO, Huddle</p>
-          </div>
-          <div class="person">
-            <p class="comment">
-              Fylo has improved our team productivity by <br />
-              an order of magnitude. Since making the <br />
-              switch our team has become a well-oiled <br />collaboration
-              machine.
-            </p>
-            <div>
-              <img src="./images/profile-2.jpg" alt="Bruce McKenzie profile" />
-              <p class="bold">Bruce McKenzie</p>
-              <p>Founder & CEO, Huddle</p>
-            </div>
-          </div>
-          <div class="person">
-            <p class="comment">
-              Fylo has improved our team productivity by <br />
-              an order of magnitude. Since making the <br />
-              switch our team has become a well-oiled <br />collaboration
-              machine.
-            </p>
-            <div>
-              <img src="./images/profile-3.jpg" alt="Iva Boyd" />
-              <p class="bold">Iva Boyd</p>
-              <p>Founder & CEO, Huddle</p>
-            </div>
+        <section class="testimonials-container">
+          <img
+            class="quotes-icon"
+            src="./images/bg-quotes.png"
+            alt="Quotes Icon"
+          />
+          <div class="testimonials">
+            <article class="testimonial">
+              <p class="testimonial-paragraph">
+                Fylo has improved our team productivity by <br />
+                an order of magnitude. Since making the <br />
+                switch our team has become a well-oiled <br />collaboration
+                machine.
+              </p>
+              <div class="person-infos">
+                <img
+                  class="customer-img"
+                  src="./images/profile-1.jpg"
+                  alt="Satish Patel profile"
+                />
+                <div class="person-info">
+                  <strong>Satish Patel</strong>
+                  <cite>Founder & CEO, Huddle</cite>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial">
+              <p class="testimonial-paragraph">
+                Fylo has improved our team productivity by <br />
+                an order of magnitude. Since making the <br />
+                switch our team has become a well-oiled <br />collaboration
+                machine.
+              </p>
+              <div class="person-infos">
+                <img
+                  class="customer-img"
+                  src="./images/profile-2.jpg"
+                  alt="Bruce McKenzie profile"
+                />
+                <div class="person-info">
+                  <strong>Bruce McKenzie</strong>
+                  <cite>Founder & CEO, Huddle</cite>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial">
+              <p class="testimonial-paragraph">
+                Fylo has improved our team productivity by <br />
+                an order of magnitude. Since making the <br />
+                switch our team has become a well-oiled <br />collaboration
+                machine.
+              </p>
+              <div class="person-infos">
+                <img
+                  class="customer-img"
+                  src="./images/profile-3.jpg"
+                  alt="Iva Boyd"
+                />
+                <div class="person-info">
+                  <strong>Iva Boyd</strong>
+                  <cite>Founder & CEO, Huddle</cite>
+                </div>
+              </div>
+            </article>
           </div>
         </section>
+        <div class="quick-contact">
+          <h2>Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any <br />
+            questions, our support team would be happy to help you.
+          </p>
+
+          <div class="form">
+            <input type="text" placeholder="email@example.com" />
+            <button type="submit" class="getStarted">
+              get started for free
+            </button>
+          </div>
+        </div>
       </main>
-      <footer>
+
+      <footer class="footer">
+        <div class="logo-section">
+          <img src="./images/logo.svg" alt="logo" class="logo" />
+        </div>
+        <div class="cont">
+          <div class="contact-info">
+            <div class="part">
+              <img
+                class="address-icons"
+                src="./images/icon-location.svg"
+                alt="location-icon"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur <br />
+                adipiscing elit, sed do eiusmod tempor <br />
+                incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
+            <div class="part">
+              <img
+                class="address-icons"
+                src="./images/icon-phone.svg"
+                alt="phone-icon"
+              />
+              <p>+1-543-123-4567</p>
+            </div>
+            <div class="part">
+              <img
+                class="address-icons"
+                src="./images/icon-email.svg"
+                alt="email-icon"
+              />
+              <p>example@fylo.com</p>
+            </div>
+          </div>
+          <section class="last-section">
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">jobs</a></li>
+              <li><a href="#">press</a></li>
+              <li><a href="#">blog</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">contact us</a></li>
+              <li><a href="#">terms</a></li>
+              <li><a href="#">privacy</a></li>
+            </ul>
+            <div class="social-media-icons">
+              <ul>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
         <p class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -195,7 +296,12 @@
           >. Coded by <a href="#">Cesar Ramirez</a>.
         </p>
       </footer>
+
       <script src="script.js"></script>
+      <script
+        src="https://kit.fontawesome.com/f22559516b.js"
+        crossorigin="anonymous"
+      ></script>
     </div>
   </body>
 </html>
